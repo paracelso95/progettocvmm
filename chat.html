@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat JavaScript e HTML | Michele Moltrasio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/chat.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">Impara facendo</p>
+        <h1>JavaScript e HTML</h1>
+        <p class="subtitle">
+          Fai una domanda e scopri come JavaScript può cambiare una pagina HTML.
+          Questa chat è una semplice demo che risponde direttamente nel browser.
+        </p>
+      </header>
+
+      <nav class="top-nav" aria-label="Navigazione principale">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="experience.html" class="nav-link">Esperienze</a>
+        <a href="education.html" class="nav-link">Formazione</a>
+        <a href="projects.html" class="nav-link">Progetti</a>
+        <a href="chat.html" class="nav-link active" aria-current="page">Chat JavaScript</a>
+      </nav>
+
+      <section class="chat-panel" aria-label="Chat didattica su JavaScript e HTML">
+        <div class="chat-intro">
+          <h2>Parliamo di codice</h2>
+          <p>Prova a chiedere: “Cos'è il DOM?”, “Come cambio un testo?” oppure “Fammi un esempio”.</p>
+        </div>
+        <div class="chat-messages" id="chat-messages" role="log" aria-live="polite" aria-relevant="additions">
+          <p class="chat-message bot-message">
+            Ciao! HTML definisce la struttura della pagina e JavaScript può modificarla mentre la usi.
+            Chiedimi come funziona, oppure prova una delle domande suggerite.
+          </p>
+        </div>
+        <form class="chat-form" id="chat-form">
+          <label class="visually-hidden" for="chat-input">Scrivi una domanda</label>
+          <input
+            id="chat-input"
+            name="message"
+            type="text"
+            placeholder="Scrivi una domanda su JavaScript e HTML..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Invia</button>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>Michele Moltrasio</p>
+    </footer>
+  </body>
+</html>
